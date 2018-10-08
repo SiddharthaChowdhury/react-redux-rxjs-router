@@ -1,9 +1,15 @@
 export const TypeActionHome = {
     checkLogin : "AuthInfo > checkLogin",
+    setLogin : "AuthInfo > setLogin",
+
     signupUser : "Home > signupUser",
 };
 
-export const isLoggedIn = () => ({
+export const actionCheckIsLoggedIn = () => ({
     type: TypeActionHome.checkLogin,
-    isLoggedIn: true
+});
+
+export const actionSetIsLoggedIn = (status) => ({
+    type: TypeActionHome.setLogin,
+    status
 });

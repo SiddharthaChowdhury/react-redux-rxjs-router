@@ -7,11 +7,11 @@ const initialState = {
 
 export default (state = initialState, action) => {
     switch(action.type) {
-        case TypeActionHome.checkLogin:
+        case TypeActionHome.setLogin:
             return Object.assign(
                 {},
                 state,
-                {isLoggedIn: action.isLoggedIn}
+                {isLoggedIn: action.status}
             )
         
         default: 
