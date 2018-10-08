@@ -1,14 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
 
-const App = () =>(
-    <div>
-        Hello world!!!!!!!!!!!!!!!!!!!!!!!!!!
-    </div>
-)
+import {Provider} from "react-redux";
+import {Store} from "./config/store";
 
+import Signup from "./features/signup";
 
 ReactDOM.render(
-    <App/>,
-    document.getElementById('root')
+    <Provider store={Store}>
+        <Signup/>
+    </Provider>,
+    document.getElementById("root")
 )
