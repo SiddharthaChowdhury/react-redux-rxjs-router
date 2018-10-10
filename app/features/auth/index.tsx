@@ -4,7 +4,7 @@ import {Action, Dispatch} from  "redux";
 import {actionCheckIsLoggedIn} from "./actionAuth";
 import IState from "../../config/IState";
 
-import "./style/auth.css";
+// import "./style/auth.css";
 
 interface ISignupState {
     status: boolean
