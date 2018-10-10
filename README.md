@@ -16,6 +16,7 @@ A minimal boilerplate to reactive programming using `react.js`, `redux`, `redux-
 - Less
 - **Gulp**: For handling static assets.
 - **Webpack**: For rest of the tasks ;)
+- Jest (testing)
 
 ## Style
 

@@ -6,19 +6,23 @@
   "scripts": {
     "start": "gulp less && gulp watch | webpack-dev-server --mode development --open --hot",
     "build": "gulp less | webpack --mode production",
-    "build:style": "gulp compile-less"
+    "build:style": "gulp compile-less",
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "babel-jest": "^23.6.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-redux": "^5.0.7",
+    "react-test-renderer": "^16.5.2",
     "redux": "^4.0.0",
     "redux-observable": "^1.0.0",
     "rxjs": "^6.3.3"
   },
   "devDependencies": {
+    "@types/jest": "^23.3.5",
     "awesome-typescript-loader": "^5.2.1",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
@@ -31,9 +35,11 @@
     "gulp-plumber": "^1.2.0",
     "gulp-rename": "^1.4.0",
     "html-webpack-plugin": "^3.2.0",
+    "jest": "^23.6.0",
     "less-loader": "^4.1.0",
     "source-map-loader": "^0.2.4",
     "style-loader": "^0.23.1",
+    "ts-jest": "^23.10.4",
     "typescript": "^3.1.2",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2",
