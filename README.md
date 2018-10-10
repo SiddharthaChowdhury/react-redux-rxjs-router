@@ -2,3 +2,7 @@
 React + Redux + Redux-Observable + TypeScript
 
 A React.js (Webpack and Babel) boilerplate using - Redux, Rxjs (redux observable), TypeScript
+
+## Requirement 
+
+- npm install gulp -g

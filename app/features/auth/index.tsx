@@ -20,7 +20,7 @@ class _Auth extends React.PureComponent<ISignupProps> {
         const props = this.props;
         return (
             <div>
-                <h4>Status: {props.status.toString()}</h4>
+                <h4>Is logged in? : {props.status.toString()}</h4>
                 <button onClick={props.onLoadCheckLogin}>Login please</button>
             </div>
         );

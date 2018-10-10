@@ -1,5 +1,5 @@
-var path    = require('path');
-var hwp     = require('html-webpack-plugin');
+const path    = require('path');
+const hwp     = require('html-webpack-plugin');
 
 module.exports = {
     entry: path.join(__dirname, '/app/index.tsx'),
@@ -24,7 +24,18 @@ module.exports = {
                 enforce: "pre", 
                 test: /\.js$/, 
                 loader: "source-map-loader" 
-            }
+            },
+
+            {
+                test: /\.less$/,
+                use: [{
+                    loader: 'style-loader' // creates style nodes from JS strings
+                }, {
+                    loader: 'css-loader' // translates CSS into CommonJS
+                }, {
+                    loader: 'less-loader' // compiles Less to CSS
+                }]
+              }
         ]
     },
     plugins:[

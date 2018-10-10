@@ -5,11 +5,13 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "build:style": "gulp compile-less"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "gulp": "^4.0.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-redux": "^5.0.7",
@@ -23,9 +25,12 @@
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "gulp-less": "^4.0.1",
     "html-webpack-plugin": "^3.2.0",
+    "less-loader": "^4.1.0",
     "source-map-loader": "^0.2.4",
-    "typescript": "^3.1.1",
+    "typescript": "^3.1.2",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.9"
