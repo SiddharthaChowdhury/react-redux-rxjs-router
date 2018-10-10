@@ -1,5 +1,5 @@
 import IState from "../../config/IState";
 
-export const selectorAuthInfo = (state: IState): boolean => {
+export const selectAuthInfo = (state: IState): boolean => {
     return state.authInfo.status;
 }
