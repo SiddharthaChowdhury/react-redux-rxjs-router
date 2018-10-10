@@ -2,8 +2,9 @@ import * as React from 'react';
 import {connect} from "react-redux";
 import {Action, Dispatch} from  "redux";
 import {actionCheckIsLoggedIn} from "./actionAuth";
-
 import IState from "../../config/IState";
+
+import "./style/auth.css";
 
 interface ISignupState {
     status: boolean
