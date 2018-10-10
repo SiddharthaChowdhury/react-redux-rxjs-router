@@ -1,8 +1,9 @@
 import * as React from 'react';
-import {connect} from "react-redux";
 import {Action, Dispatch} from  "redux";
 import {actionCheckIsLoggedIn} from "./actionAuth";
+import {connect} from "react-redux";
 import IState from "../../config/IState";
+import {selectorAuthInfo} from "./selectorAuthInfo";
 
 // import "./style/auth.css";
 
@@ -29,7 +30,7 @@ class _Auth extends React.PureComponent<ISignupProps> {
 }
 
 const mapState = (state: IState) => ({
-    status: state.authInfo.status
+    status: selectorAuthInfo(state)
 })
 
 const mapDispatch = (dispatch: Dispatch) => ({

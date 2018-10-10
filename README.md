@@ -1,16 +1,19 @@
-# bootstrap01
-React + Redux + Redux-Observable + TypeScript + Less
+# React-RxJs boilerplate
 
-A React.js (Webpack and Babel) boilerplate using - Redux, Rxjs (redux observable), TypeScript
+A minimal boilerplate to reactive programming using `react.js`, `redux`, `redux-observable (RxJs)`, `Typescript`. Implementing : (**action**, **epic**, **selectors** and **reducers**)
 
-## Requirement 
+## Setup 
 
+- npm install
 - npm install gulp -g
 
-## Doubts
+## Packages used
 
-[Why using both?](https://css-tricks.com/combine-webpack-gulp-4/#article-header-id-14)
-
+- React.js
+- Redux (react-redux)
+- redux-observable (RxJs)
+- Typescript
+- Less
 - **Gulp**: For handling static assets.
 - **Webpack**: For rest of the tasks ;)
 

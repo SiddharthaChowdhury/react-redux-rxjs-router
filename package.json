@@ -4,14 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "gulp less | gulp watch | webpack-dev-server --mode development --open --hot",
+    "start": "gulp less && gulp watch | webpack-dev-server --mode development --open --hot",
     "build": "gulp less | webpack --mode production",
     "build:style": "gulp compile-less"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "gulp": "^4.0.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-redux": "^5.0.7",
@@ -26,6 +25,7 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^1.0.0",
+    "gulp": "^4.0.0",
     "gulp-cssmin": "^0.2.0",
     "gulp-less": "^4.0.1",
     "gulp-plumber": "^1.2.0",
