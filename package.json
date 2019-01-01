@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "gulp less && gulp watch | webpack-dev-server --mode development --open --hot",
-    "build": "gulp less | webpack --mode production",
+    "start": "concurrently \"gulp less\" \"gulp watch\" \"webpack-dev-server --mode development --open --hot\"",
+    "build": "concurrently \"gulp less\" \"webpack --mode production\"",
     "build:style": "gulp compile-less",
     "test": "jest"
   },
@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "babel-jest": "^23.6.0",
+    "concurrently": "^4.1.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-redux": "^6.0.0",
