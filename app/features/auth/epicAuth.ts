@@ -6,7 +6,7 @@ import IState from "../../config/IState";
 import {switchMap} from 'rxjs/operators';
 import {from} from "rxjs";
 
-export const epicCheckLogin: Epic<Action, Action, IState> = ( action$, state$ ) => 
+export const epicCheckLogin: Epic<Action, Action, IState> = ( action$, state$ ): Observable<any> => 
     action$.pipe(
         ofType(TypeActionAuth.checkLogin),
         switchMap(
