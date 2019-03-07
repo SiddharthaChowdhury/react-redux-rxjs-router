@@ -1,7 +1,7 @@
 import {createStore, applyMiddleware, compose, Action} from "redux";
 import { createEpicMiddleware } from 'redux-observable';
 
-import IState from "../config/IState";
+import IState from "./IState";
 import rootReducer from "./rootReducer";
 import rootEpic from "./rootEpic";
 

@@ -5,7 +5,6 @@ import {connect} from "react-redux";
 import IState from "../../config/IState";
 import {selectAuthInfo} from "./selectAuthInfo";
 
-// import "./style/auth.css";
 
 interface ISignupState {
     status: boolean

@@ -1,5 +1,5 @@
 import {combineReducers} from "redux";
-import reducerAuth from "../features/auth/reducerAuth";
+import reducerAuth from "../features/auth-depricated/reducerAuth";
 import IState from "./IState";
 
 export default combineReducers <IState>({
