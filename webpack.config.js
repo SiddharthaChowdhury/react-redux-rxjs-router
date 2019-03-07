@@ -1,5 +1,6 @@
 const path    = require('path');
 const hwp     = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
     entry: path.join(__dirname, '/app/src/index.tsx'),
@@ -27,12 +28,21 @@ module.exports = {
             },
 
             {
-                test: /\.css$/,
-                use: [ 'style-loader', 'css-loader' ]
+                test: /\.scss$/,
+                use: ExtractTextPlugin.extract({
+                    fallback: "style-loader",
+                    use: "css-loader!sass-loader",
+                })
             }
+
+            // {
+            //     test: /\.css$/,
+            //     use: [ 'style-loader', 'css-loader' ]
+            // }
         ]
     },
     plugins:[
-        new hwp({template:path.join(__dirname, '/app/src/index.html')})
+        new hwp({template: path.join(__dirname, '/app/src/index.html')}),
+        new ExtractTextPlugin('style.css')
     ]
-}
+};

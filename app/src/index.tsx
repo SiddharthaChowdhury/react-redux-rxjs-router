@@ -6,7 +6,7 @@ import {Store} from "./config/store";
 
 import Auth from "./features/auth-depricated";
 
-// import "./index.scss";
+import "./index.scss";
 
 ReactDOM.render(
     <Provider store={Store}>
