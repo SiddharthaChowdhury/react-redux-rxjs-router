@@ -3,7 +3,7 @@ import {Action} from "redux";
 export const enum TypeActionAuth {
     checkLogin = "AuthInfo > checkLogin",
     setLogin = "AuthInfo > setLogin",
-};
+}
 
 export interface IActionAuth extends Action {
     status?: boolean;

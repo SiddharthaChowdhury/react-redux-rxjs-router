@@ -1,4 +1,4 @@
-import IAuthInfo from "../features/auth-depricated/IAuthInfo";
+import IAuthInfo from "../components/auth/IAuthInfo";
 
 export default interface IState {
     authInfo: IAuthInfo

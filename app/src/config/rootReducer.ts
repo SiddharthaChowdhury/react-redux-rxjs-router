@@ -1,6 +1,6 @@
 import {combineReducers} from "redux";
-import reducerAuth from "../features/auth-depricated/reducerAuth";
 import IState from "./IState";
+import reducerAuth from "../components/auth/reducerAuth";
 
 export default combineReducers <IState>({
     authInfo: reducerAuth

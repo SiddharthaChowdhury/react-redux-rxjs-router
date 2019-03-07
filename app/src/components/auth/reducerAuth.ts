@@ -1,21 +1,21 @@
-import {TypeActionAuth, IActionAuth} from "./actionAuth";
+import {IActionAuth, TypeActionAuth} from "./actionAuth";
 import IAuthInfo from "./IAuthInfo";
 
 const initialState: IAuthInfo = {
     status: false,
-}
+};
 
-export default (state:IAuthInfo = initialState, action: IActionAuth) => {
-    switch(action.type) {
+export default (state: IAuthInfo = initialState, action: IActionAuth) => {
+    switch (action.type) {
         case TypeActionAuth.setLogin:
             return Object.assign(
                 {},
                 state,
                 {status: action.status}
-            )
-        
-        default: 
+            );
+
+        default:
             return state;
-                
+
     }
 }

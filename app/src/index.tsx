@@ -4,9 +4,8 @@ import * as ReactDOM from "react-dom";
 import {Provider} from "react-redux";
 import {Store} from "./config/store";
 
-import Auth from "./features/auth-depricated";
-
 import "./index.scss";
+import {Auth} from "./components/auth/Auth";
 
 ReactDOM.render(
     <Provider store={Store}>

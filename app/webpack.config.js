@@ -34,15 +34,14 @@ module.exports = {
                     use: "css-loader!sass-loader",
                 })
             }
-
-            // {
-            //     test: /\.css$/,
-            //     use: [ 'style-loader', 'css-loader' ]
-            // }
         ]
     },
     plugins:[
         new hwp({template: path.join(__dirname, '/src/index.html')}),
         new ExtractTextPlugin('style.css')
-    ]
+    ],
+    devServer: {
+        historyApiFallback: true,
+        stats: 'errors-only'
+    },
 };
