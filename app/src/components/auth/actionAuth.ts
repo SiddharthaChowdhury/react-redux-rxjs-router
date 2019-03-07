@@ -1,8 +1,13 @@
 import {Action} from "redux";
 
 export const enum TypeActionAuth {
-    checkLogin = "AuthInfo > checkLogin",
-    setLogin = "AuthInfo > setLogin",
+    RequestLogin = "AuthInfo > checkLogin",
+    SetAuth = "AuthInfo > setLogin",
+}
+
+export interface IAuthLoginInfo {
+    email: string;
+    password: string;
 }
 
 export interface IActionAuth extends Action {
@@ -10,11 +15,17 @@ export interface IActionAuth extends Action {
     type: TypeActionAuth;
 }
 
-export const actionCheckIsLoggedIn = (): IActionAuth => ({
-    type: TypeActionAuth.checkLogin,
+export interface IActionAuthLogin extends Action {
+    loginInfo: IAuthLoginInfo;
+    type: TypeActionAuth;
+}
+
+export const actionCheckIsLoggedIn = (loginInfo: IAuthLoginInfo): IActionAuthLogin => ({
+    loginInfo,
+    type: TypeActionAuth.RequestLogin
 });
 
 export const actionSetIsLoggedIn = (status: boolean): IActionAuth => ({
-    type: TypeActionAuth.setLogin,
-    status
+    status,
+    type: TypeActionAuth.SetAuth
 });
