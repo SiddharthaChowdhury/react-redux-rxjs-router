@@ -32,3 +32,22 @@ This boilerplate is bundled with a simple example of - "button click and display
 We're using [Jest](https://jestjs.io/docs/en/tutorial-async) by facebook, as it's popular among React.js community, also because it is easy, well documented and does the job! 
 
 Use `npm test` or `npm t` to run example test.
+
+##TODO: Fix warning on building app -
+
+    WARNING in asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+    This can impact web performance.
+    Assets: 
+      build.js (264 KiB)
+    
+    WARNING in entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+    Entrypoints:
+      main (264 KiB)
+          build.js
+          style.css
+    
+    
+    WARNING in webpack performance recommendations: 
+    You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.
+    For more info visit https://webpack.js.org/guides/code-splitting/
+
