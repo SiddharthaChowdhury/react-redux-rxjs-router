@@ -1,4 +1,4 @@
-# React-RxJs boilerplate
+# React-Redux-RxJs boilerplate
 
 A minimal boilerplate to reactive programming using `react.js`, `redux`, `redux-observable (RxJs)`, `Typescript`. Implementing : (**action**, **epic**, **selectors** and **reducers**)
 
@@ -14,17 +14,19 @@ This setup is fairly straight forward for those who are aware of [RxJs](https://
 
 ### Given EXAMPLE
 
-This boilerplate is bundled with a simple example of - "button click and display change" and not "Hello World!" example, as would be fairly simple for this kind of setup. There was a need of putting an examples which uses the underlying concepts of reactive programming using [**React - Redux**](https://redux.js.org/basics/usagewithreact) and [**redux-observable**](https://redux-observable.js.org) THE - "Action, Epic, Selecor, Reducer".
+This boilerplate is bundled with a simple example of - "button click and display change" and not "Hello World!" example, as would be quite simple for this kind of setup. There was a need of putting an examples which uses the underlying concepts of reactive programming using [**React - Redux**](https://redux.js.org/basics/usagewithreact) and [**redux-observable**](https://redux-observable.js.org) THE - "Action, Epic, Selector, Reducer".
 
 ## Packages overview
 
-- React.js
-- Redux (react-redux)
-- redux-observable (RxJs)
-- Typescript
+- React.js (16.8.4)
+- Redux (4.0.1)
+- React-redux (6.0.1)
+- redux-observable (1.0.0)
+- RxJs (6.4.0)
+- Typescript (3.3.3)
 - Scss
-- **Webpack**: For rest of the tasks ;)
-- Jest (testing)
+- Webpack (4.20.2)
+- Jest
 
 
 ## Test
@@ -33,7 +35,7 @@ We're using [Jest](https://jestjs.io/docs/en/tutorial-async) by facebook, as it'
 
 Use `npm test` or `npm t` to run example test.
 
-##TODO: Fix warning on building app -
+## TODO: Fix warning on building app -
 
     WARNING in asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
     This can impact web performance.
