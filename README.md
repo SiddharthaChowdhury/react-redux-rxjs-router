@@ -26,6 +26,7 @@ This setup is fairly straight forward for those who are aware of [RxJs](https://
 - Scss
 - Webpack (4.20.2)
 - Jest
+- Enzyme + Sinon
 
 
 ## Unit Test
@@ -33,8 +34,6 @@ This setup is fairly straight forward for those who are aware of [RxJs](https://
 Using [Jest](https://jestjs.io/docs/en/tutorial-async) by facebook, as it's popular among React.js community, also because it is easy, well documented and does the job! 
 
 Use `npm test` or `npm t` to run example test.
-
-**TODO:** Airbnb `enzyme` for component test yet to be implemented 
 
 ## TODO: Fix warning on building app -
 
